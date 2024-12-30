@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi E-commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="D:\Web Developer\Talento Tech\TP - Comision 24231\Imagenes\pixabay.png" alt="D-Store" width="50">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Mi E-commerce</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#reseñas">Reseñas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>        
+        <video autoplay muted loop>
+            <source src="./Videos/perfume.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <h2>Productos</h2>
+        <section id="productos" class="productos-container">
+            <!-- Tarjetas dinámicas de productos se insertarán aquí -->
+        </section>        
+
+        <!-- Sección de Reseñas -->
+        <h2>Reseñas</h2>
+        <section id="reseñas">
+            <div class="review-card">
+                <p>"Los productos son de excelente calidad, se nota el cuidado en cada detalle. Recibí mi pedido rápidamente, son exactamente lo que esperaba, ¡muy recomendados!"</p>
+                <p>— Laura G.</p>
+            </div>
+            <div class="review-card">
+                <p>"Compré varios productos para regalar y fueron un éxito. La calidad y la presentación son impecables. Definitivamente volveré a comprar."</p>
+                <p>— Carlos R.</p>
+            </div>
+            <div class="review-card">
+                <p>"La atención al cliente fue maravillosa. Me ayudaron a elegir el producto perfecto y la experiencia de compra fue muy sencilla y rápida."</p>
+                <p>— Lorena P.</p>
+            </div>
+            <div class="review-card">
+                <p>Me encanta esta tienda, siempre tienen productos de alta calidad y las recomendaciones del equipo fueron muy acertadas."</p>
+                <p>— Jorge T.</p>
+            </div>
+            <div class="review-card">
+                <p>"Estoy encantada con el producto, superó mis expectativas. La fragancia es duradera y elegante, ¡perfecta para el día a día!"</p>
+                <p> — Sofía M.</p>
+            </div>
+            <div class="review-card">
+                <p>"Excelente relación calidad-precio. Me sorprendió gratamente la calidad, y el envío fue rápido. Definitivamente recomiendo esta tienda."</p>
+                <p>— Martín V.</p>
+            </div>
+            <!-- Otras reseñas -->
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/mbljgvbq" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+<footer>
+    <p>&copy; 2024 Mi E-commerce. Todos los derechos reservados.</p>
+</footer>
+
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

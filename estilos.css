@@ -1,0 +1,230 @@
+/* Estilos Generales */
+body {
+    font-family: 'Poiret One', sans-serif;
+    color: #080000;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+header, footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header img {
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000200;
+}
+
+h2 {
+    margin-top: 2rem;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Sección Productos */
+.productos-container {
+    display: grid; /* O flexbox según tu diseño */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#productos .product-card {
+    flex: 1 1 200px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+#productos, #reseñas, #contacto {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+#productos h2, #reseñas h2, #contacto h2 {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+#productos .product-card {
+    flex: 1 1 250px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#productos .product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+#productos .product-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#productos .product-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+#productos .product-card span {
+    display: block;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+#productos .product-card button {
+    padding: 0.5rem 1rem;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#productos .product-card button:hover {
+    background-color: #757575;
+    color: #fff;
+}
+
+#productos .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15)
+}
+
+/* Sección reseñas */
+#reseñas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+#reseñas .review-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.review-card p {
+    font-style: italic;
+    color: #333;
+}
+
+
+/* Formulario de Contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input, textarea, button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #f2f2f2;
+    color: rgb(5, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #757575;
+    color: #f2f2f2;
+}
+
+/* Carrito */
+
+.carrito-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.carrito-item img {
+    border-radius: 8px;
+}
+
+.carrito-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.carrito-item button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carrito-item button:hover {
+    background-color: #0056b3;
+}
